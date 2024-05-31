@@ -37,7 +37,7 @@ export const Peliculas = ({ listadoState, setListadoState }) => {
         <Buscar setListadoState={setListadoState}/>
       </section>
 
-      <section id="peliculas" className="grid grid-cols-3 mb-12">
+      <section id="peliculas" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-12">
         {listadoState !== null ? listadoState.map(peli => {
           return (
             <article key={peli.id} className="border-2 border-black h-40 w-60 mt-10 mx-auto rounded-md p-6 text-center text-black">
